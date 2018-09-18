@@ -38,23 +38,27 @@ p {
     margin: 5px;
 }
 
-.sobre-conteudo {
+.conteudo {
     width: 45%;
     display: inline-block;
 }
 
-.sobre-imagem {
-    width: 45%;
-    display: inline-block;
+.aside imagem {
+    width: 40%;
+    display: block;
+    float:right;
+    vertical-align: middle;
+    font-size: 10px;
+
 }
 
-.section-sobre {
+.sobre {
    width: 960px;
    margin: 0 auto; /* macete para deixar elementos block centralizados */
    margin-top: 100px;
 }
 
-.sobre-conteudo__botoes {
+.botoes {
     text-align: right; /* esse tipo de alinhamento para botões não funciona se for colocado diretamente no elemento <a>. Deve-se colocar essa propriedade no elemento mãe */
 }
 
@@ -63,12 +67,12 @@ p {
     font-size: 16px;
 }
 
-.a {
+.btn-roxo {
     background-color: #5d1277;
     color: white; /* define a cor do conteúdo do elemento */
 }
 
-.b {
+.btn-transp {
     color: #5d1277;
     border: 1px solid #5d1277; /* cria uma borda no elemento. Ordem de valores: grossura-da-borda tipo-da-borda cor-da-borda. */
 }
