@@ -1,0 +1,85 @@
+/* GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/computador.jpg');
+    background-size: 100% 100vw; 
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    max-height: 100vh;
+    background-repeat: no-repeat;
+}
+
+a:hover {
+    text-decoration: none;
+    filter: opacity(75%);
+    /* filter:grayscale(75%); */
+    }
+
+/* FONTS */
+h1 {
+    color: #4F4F4F;
+    font-size: 35px;
+    margin-top: 22px;
+}
+
+h2 {
+    color: #bfbfbf;   
+    font-size: 25px;
+    margin-top: 22px;
+}
+
+/* SEÇÃO SOBRE */
+.secao-sobre {
+    background-color: white;
+    width: 700px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.sobre-conteudo__img {
+    margin-top: 40px;
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    filter: grayscale(50%)
+}  
+    
+.sobre-conteudo {
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align: center;
+    
+}
+
+.sobre-conteudo__redes-sociais {
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom: 90px;
+}
+
+.sobre-conteudo__redes-sociais img {
+    width: 87px;
+    height: 86px;
+    margin-left: 40px;
+
+   
+    
+}
+
+@media screen and (max-width: 900px) {
+    .secao-sobre{
+        background-color: lightblue;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .secao-sobre{
+        background-color: lightpink;
+    }
+
+}
