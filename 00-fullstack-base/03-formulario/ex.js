@@ -1,44 +1,23 @@
-// var user = document.getElementById("user").value;
+window.onload = function () {
 
-function checkUser() {
-  alert(document.getElementById("user").value);
+  var check = document.querySelector("#checkP");
 
+  check.addEventListener('click', function (event) {
+    event.preventDefault();
+    var user = document.querySelector("#user").value;
+    var password = document.querySelector("#password").value.length;
 
-var check=document.getElementById("checkP");
-  check.addEventListener('click', function(){
+    if (user === null || user == '') {
+      alert("Favor inserir usuário");
 
+    };
+    if (password < 6) {
+      alert("Favor inserir uma senha com mais de 6 caracteres");
+
+    }else (password > 6) {
+      alert("Favor inserir uma senha menor");
+    };
+    
   });
-
-  var user=document.getElementById("user").value{
-        alert(user);
-  };
-
-
 }
-
-// var password = document.getElementById("password");
-
-// // check.addEventListener('click', function(checkUser) {
-// //   alert(user.value);
-
-
-
-
-
-
-// function checkUser() = document.getElementByClass("user").value{
-//   if ("user" === null) {
-//     alert("Favor inserir usuário");
-//     user.preventDefault();
-//   }
-// }
-
-
-
-
-// function checkPassword() = document.getElementById("password").length{
-//   if ("password" < 6) {
-//     alert("Favor inserir uma senha com mais de 6 caracteres");
-//     password.preventDefault();
-//   }
 
